@@ -1,12 +1,13 @@
 const api = require('express').Router();
 const path = require("path");
-const db = require('../db/db.json');
-const { writeFile } = require('fs')
+let db = require("../db/db.json");
+const { writeFile, readFileSync } = require("fs");
 const { v4: uuidv4 } = require('uuid');
 
-api.get('/notes', (req, res) => {
+api.get("/notes", (req, res) => {
+  db = JSON.parse(readFileSync("./db/db.json", "utf8"));
   res.json(db);
-})
+});
 
 api.post('/notes', (req, res) => {
   req.body.id = uuidv4();
