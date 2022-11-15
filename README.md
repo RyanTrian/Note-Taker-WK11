@@ -7,17 +7,13 @@
 
 ## Description 📃
 
+Week 11's challenge, make a note taking web app and deploy on Heroku. When user visits the app, they will be presented with a button that direct them to the notes page. User then can make a new note, save it. The note will be logged, user can review it and delete it.
 
-
-[ here 👈]()
-
-## Demo 💻
-
-<img width=650, height=350 src="">
+[Check out my note taker app here 👈](https://notes-taker-wk11.herokuapp.com/)
 
 ## Screenshot 📷
 
-<img width=650, height=350 src="">
+<img width=450, height=350 src="https://user-images.githubusercontent.com/82792300/202019017-53c3d443-1a61-45fc-b021-390b10bae966.png">
 
 ## Installation 🔧
 
@@ -27,11 +23,13 @@ npm i
 
 ## Usage 
 
-
+Go to the app's link in the description and start making some notes.
 
 ## Dependencies
 
-
+* ExpressJs
+* Uuid
+* Nodemon
 
 ## License 🔑
 
